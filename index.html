@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body class="h-[500px] w-full">
+    <!--Login page start fro here-->
+    <div id="page-one">
+       <div class="w-full h-[150px]">
+       <h1 class="p-[100px] text-center font-semibold text-xl text-[#81BFDA]
+       ">Welcome to pioneer bank</h1>
+       </div>
+       <div class="ml-[60px] boxbox w-[400px] h-[170px] border-2 pl-[20px] drop-shadow-md">
+        <h1 class="font-semibold m-2">Login</h1>
+        <input class="border-2 rounded m-2 hover:border-[#81BFDA]" type="text" placeholder="Email">
+        <br>
+        <input class="border-2 mt-[2px] m-2 hover:border-[#81BFDA]" type="password" placeholder="Password">
+        <br>
+        <button id="login" class=" w-[60px] m-2 border-[#118B50] rounded bg-[#118B50] text-white" >Submit</button>
+       
+        </div>
+    </div>
+
+    <!--Main page start from here-->
+
+ <div id="page-two"> <!--Deposit,Withdraw,Balance buttons are here -->
+    <div class="mt-16 ml-12 flex gap-4">
+        <div class="h-[60px] w-[120px] border-2 rounded-lg 
+        bg-[#001A6E] text-white pl-2 font-medium">
+          <p>Deposit</p>
+          <h1>$ <span id="deposit"> 00 </span></h1>
+        </div>
+        <div class="h-[60px] w-[120px] border-2 rounded-lg 
+        bg-[#AB4459] text-white pl-2 font-medium">
+          <p>Withdraw</p>
+          <h1>$ <span id="withdraw"> 00 </span></h1>
+        </div>
+        <div class="h-[60px] w-[120px] border-2 rounded-lg 
+        bg-[#F26B0F] text-white pl-2 font-medium">
+          <p>Balance</p>
+          <h1>$ <span id="balance"> 00 </span></h1>
+        </div>
+  </div>
+         <!--Deposit input are here-->
+        <div class="flex">
+            <div class="mt-10 ml-12 border-2 w-[210px] pl-2 h-[120px]">
+                <h1 class="font-medium">Deposit</h1>
+                <input id="depositIn" class="hover:border-[#81BFDA] mt-3 pl-2 border-2" type="text" placeholder="$ amount">
+                <br>
+                <button id="depositpress" class="w-[70px] mt-3 border-2 border-[#118B50] rounded bg-[#118B50] text-white font-medium" >Deposit</button>
+            </div>
+           <!--Withdraw input are here-->
+            <div class="mt-10 ml-4 border-2 w-[210px] pl-2 h-[120px]">
+                <h1 class="font-medium">Withdraw</h1>
+                <input id="withdrawIn" class="hover:border-[#81BFDA] mt-3 pl-2 border-2" type="text" placeholder="$ amount">
+                <br>
+                <button id="withdrawpress" class="w-[90px] mt-3 border-2 border-[#118B50] rounded bg-[#118B50] text-white font-medium" >Withdraw</button>
+            </div>
+        </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
